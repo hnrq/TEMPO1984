@@ -2,7 +2,7 @@
   "name": "tempo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://alberoneramos.github.io/TEMPO1984",
+  "homepage": "http://alberoneramos.github.io/TEMPO1984/",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gh-pages": "^2.0.1",
