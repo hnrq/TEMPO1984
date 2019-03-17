@@ -6,7 +6,7 @@ nav.navbar.navbar-expand {
     & > .navbar-nav {
         background: white;
         border-bottom: 1px solid black;
-        &>.nav-link {
+        &>.nav-link, & > span{
         font-weight: bold;
         font-size: 20px;
         color: black;
@@ -22,12 +22,24 @@ nav.navbar.navbar-expand {
 
 
 .nav-row>.col {
-    height: 36px;
-    line-height: 1.15;
-
+    height: 30px;
+    line-height: 0.75;
+    background:white;
+    color:black;
     &>span {
         font-weight: bold;
         font-size: 20px;
-        padding: 2px;
+        background:white;
     }
+}
+
+hr {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: -1.5px 0px 0px 0px;
+    background: white;
+    height: 3px;
+    clear: both;
+    border: 2px solid black;
 }
