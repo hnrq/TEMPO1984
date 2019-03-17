@@ -3,7 +3,7 @@
     text-align: center;
     cursor: pointer;
     background: white;
-    margin: 0px 16px;
+    margin: 0px 2vw;
     &:hover{
         & svg{
             & .fill{
@@ -23,7 +23,6 @@
         }
         height: 56px;
         margin-bottom:2px;
-        background: white;
         display: block;
         margin: auto;
     }
@@ -35,14 +34,13 @@
         line-height: 0.6em;
         width: fit-content;
         color: black;
-        background:white;
         font-size: 24px;
     }
 }
 
 .program-container{
     width:100%;
-    padding: 16px 24px;
+    padding: 16px 2vw;
     display: flex;
     flex-wrap: wrap;
     background: white;
@@ -51,6 +49,5 @@
 }
 
 .home{
-    background:white;
     margin-left: 1px;
 }

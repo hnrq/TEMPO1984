@@ -14,18 +14,18 @@ class Navigation extends Component{
               <Col className="text-center"><span>211K in folder</span></Col>
               <Col style={{textAlign: 'right'}}><span>177K available</span></Col>
             </Row>
-            <hr/>
+            <hr style={{zIndex:20}}/>
           </div>
         );
     }
 
     render(){
         return(
-          <div style={{margin:-2,marginBottom:'1vh'}}>
+          <div style={{margin:-2}}>
             <Navbar>
               <HeaderLeft/>
-              <Navbar.Brand href="/" style={{margin:'1px 1vw 1px 1vw',width:'3em',padding:0,fontWeight:'bold', background:'white'}}>
-                <img src={Logo} alt="Hourglass" style={{maxWidth:'100%',height:'auto', background:'white'}}/>
+              <Navbar.Brand href="/" style={{margin:'1px 1vw 1px 1vw',width:'3em',padding:0,fontWeight:'bold'}}>
+                <img src={Logo} alt="Hourglass" style={{maxWidth:'100%',height:'auto'}}/>
               </Navbar.Brand>
               <HeaderRight/>
             </Navbar>

@@ -11,7 +11,7 @@ class Container extends Component{
     renderBorders(pathname){
       if(pathname === '/') 
         return(
-          <div>
+            <div>
                 <div className="horizontal-scroll">
                     <div className="icon-container arrow-left"><ArrowIcon/></div>
                     <div className="horizontal-scroll-right">
@@ -23,7 +23,7 @@ class Container extends Component{
                     <div className="icon-container arrow-up"><ArrowIcon /></div>
                     <div className="icon-container arrow-down"  style={{marginBottom:"-4px"}}><ArrowIcon/></div>
                 </div>
-          </div>
+            </div>
         );
     }
 
