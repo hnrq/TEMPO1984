@@ -1,0 +1,64 @@
+.program {
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+    margin: 0px 16px;
+    &:hover{
+        & svg{
+            & .fill{
+                fill:black;
+            }
+                fill: white;
+        }
+        & figcaption{
+            background: black;
+            color:white;
+        }
+    }
+    & svg {
+        vertical-align: bottom;
+        & .fill {
+            fill: white;
+        }
+        height: 56px;
+        margin-bottom:2px;
+        background: white;
+        display: block;
+        margin: auto;
+    }
+
+    & figcaption {
+        display: block;
+        margin: auto;
+        height: 16px;
+        line-height: 0.6em;
+        width: fit-content;
+        color: black;
+        background:white;
+        font-size: 24px;
+    }
+}
+
+.program-container{
+    width:100%;
+    padding: 16px 24px;
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    position: relative;
+    overflow:auto;
+}
+
+.home{
+    background:white;
+    margin-left: 1px;
+}
+
+.horizontal-scroll{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: -2px;
+    width: 100.7%;
+}

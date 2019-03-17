@@ -34,7 +34,7 @@ export default class Navigation extends Component{
                     <LinkContainer to="time-left"><Nav.Link>Time Left</Nav.Link></LinkContainer>
                     <LinkContainer to="what-to-do"><Nav.Link>What to Do</Nav.Link></LinkContainer>
                </Nav>
-               <Nav pullRight>
+               < Nav pullright="true">
                     <span>{this.state.time.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
                 </Nav>
             </Navbar>

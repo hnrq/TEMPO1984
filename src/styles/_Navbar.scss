@@ -1,22 +1,35 @@
 nav.navbar.navbar-expand {
     padding: 0;
-    background:#fff;
-    padding:0px 2px;
+    background: #fff;
+    padding: 0px 2px;
     border: 2px solid black;
-    & > .navbar-nav {
+
+    &>.navbar-nav {
         background: white;
         border-bottom: 1px solid black;
-        &>.nav-link, & > span{
-        font-weight: bold;
-        font-size: 20px;
-        color: black;
-        padding: 0em 0.7em;
-        background:white;
-        &:hover {
-            background-color: black;
-            color: white;
+
+        &>.nav-link {
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+            padding: 0em 0.7em;
+            background: white;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
         }
-    }}
+
+        &>span {
+            font-weight: bold;
+            font-size: 20px;
+            color: black;
+            padding: 0em 0.7em;
+            background: white;
+            cursor: default;
+        }
+    }
 }
 
 
@@ -24,12 +37,13 @@ nav.navbar.navbar-expand {
 .nav-row>.col {
     height: 30px;
     line-height: 0.75;
-    background:white;
-    color:black;
+    background: white;
+    color: black;
+
     &>span {
         font-weight: bold;
         font-size: 20px;
-        background:white;
+        background: white;
     }
 }
 
