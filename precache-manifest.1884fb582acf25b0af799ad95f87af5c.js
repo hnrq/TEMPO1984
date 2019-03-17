@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/TEMPO1984/static/js/runtime~main.608ce1c8.js"
   },
   {
-    "revision": "953a600410949dcc425d",
+    "revision": "a95cd435b4ac462c9b81",
     "url": "/TEMPO1984/static/js/main.9b800968.chunk.js"
   },
   {
@@ -24,11 +24,11 @@ self.__precacheManifest = [
     "url": "/TEMPO1984/static/js/2.807203d7.chunk.js"
   },
   {
-    "revision": "953a600410949dcc425d",
-    "url": "/TEMPO1984/static/css/main.88bff7a9.chunk.css"
+    "revision": "a95cd435b4ac462c9b81",
+    "url": "/TEMPO1984/static/css/main.993043f0.chunk.css"
   },
   {
-    "revision": "686dc6179b24996f7f21a61889a76858",
+    "revision": "c06ccb556c86fb76bb51456434cc975f",
     "url": "/TEMPO1984/index.html"
   }
 ];
