@@ -4,6 +4,7 @@
     cursor: pointer;
     background: white;
     margin: 0px 2vw;
+    line-height: 0.5em;
     &:hover{
         & svg{
             & .fill{
@@ -28,11 +29,7 @@
     }
 
     & figcaption {
-        display: block;
-        margin: auto;
-        height: 16px;
-        line-height: 0.6em;
-        width: fit-content;
+        display: inline;
         color: black;
         font-size: 24px;
     }

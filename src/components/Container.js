@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import {Route,withRouter} from 'react-router-dom';
 import PageHeader from './PageHeader';
 import Home from './Home';
-import TimeLeft from './TimeLeft';
+import LifespanTimer from './LifespanTimer';
 import FreeTimeRandom from './FreeTimeRandom';
 import {ArrowIcon,ResizeIcon} from '../assets/SVGs';
 
@@ -32,7 +32,7 @@ class Container extends Component{
             <div className="container">
                 <Route component = {PageHeader}/>
                 <Route path="/" exact component={Home}/>
-                <Route path="/time-left" component={TimeLeft}/>
+                <Route path="/time-left" component={LifespanTimer}/>
                 <Route path="/what-to-do" component={FreeTimeRandom}/>
                 {this.renderBorders(this.props.location.pathname)}
             </div>
