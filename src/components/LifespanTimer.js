@@ -78,33 +78,11 @@ export default class TimeLeft extends Component{
             <div ref={(div) => {this.lifespanTimer = div}} className="lifespan-timer"  tabIndex="0" onKeyPress={this.handleKeyPress} onTouchEnd={this.startProgram}>
                 <div className={`header ${this.state.programStarted ? 'invisible' : ''}`} >
                     <h1><Typed typeSpeed={30} strings={['Lifespan Timer']} showCursor={false} onComplete={() => {this.subtitle.start()}}/></h1>
-                    <h3><Typed typeSpeed={30} stopped={true}  typedRef={(typed) => { this.subtitle = typed; }} showCursor={false} onComplete={() => {}} strings={['Find how much time you have left to live. <b>&lt;TOUCH&gt;</b> or press <b>&lt;ENTER&gt;</b> to start']}/></h3>
+                    <h3><Typed typeSpeed={30} stopped={true}  typedRef={(typed) => { this.subtitle = typed; }} showCursor={false} onComplete={() => {}} strings={['Find how much time you have left to live. <b>&lt;TAP&gt;</b> or press <b>&lt;ENTER&gt;</b> to start']}/></h3>
                 </div>
                 
                 <div className={`lifespan-calculator ${this.state.programStarted ? '' : 'invisible'}`}>
-                    < p > < Typed typeSpeed = {
-                        30
-                    }
-                    stopped = {
-                        true
-                    }
-                    typedRef = {
-                        (typed) => {
-                            this.genderSelect = typed
-                        }
-                    }
-                    showCursor = {
-                        false
-                    }
-                    onComplete = {
-                        () => {
-                            this.genderInput.start()
-                        }
-                    }
-                    strings = {
-                        ['Please, select your birth gender (<b>&lt;DOUBLE_TAP&gt;</b>, <b>&lt;UP&gt;</b> and <b>&lt;DOWN&gt;</b> arrows to change, <b>&lt;ENTER&gt;</b> or <b>&lt;TOUCH&gt;</b> to submit):']
-                    }
-                    />
+                    <p><Typed typeSpeed={30} stopped={true}  typedRef={(typed) => { this.genderSelect = typed }} showCursor={false} onComplete={() => {this.genderInput.start()}} strings={['Please, select your birth gender (<b>&lt;DOUBLE_TAP&gt;</b>, <b>&lt;UP&gt;</b> and <b>&lt;DOWN&gt;</b> arrows, <b>&lt;ENTER&gt;</b> or  <b>&lt;TAP&gt;</b> to submit):']}/> 
                         <span id="gender-input" 
                                 onKeyDown={this.handleSelectKeys} tabIndex="0"
                                 onTouchEnd={this.handleSelectKeys} ref={(span) => {this.genderSpan = span}}>
