@@ -4,7 +4,7 @@
     & b {
         font-weight: 100;
         font-size:2rem;
-        color: purple;
+        color: gray;
         text-decoration: underline;
     }
     & h1 {
@@ -53,4 +53,9 @@
     color:purple;
     font-weight: 800;
     margin: 0 2vw;
+}
+
+.validation-message{
+    line-height: 1.15rem;
+    display: inline-block;
 }

@@ -16,3 +16,22 @@ body {
 .invisible{
     display: none;
 }
+
+input[type=date]{
+    background:none;
+    border-bottom: 2px solid purple;
+    height: 1.6rem;
+    width: 9rem;
+    text-align: right;
+    font-size: 1.6rem;
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+        display: none;
+        -webkit-appearance: none;
+    }
+    
+    &::-webkit-calendar-picker-indicator {
+        display: none;
+        -webkit-appearance: none;
+    }
+}
