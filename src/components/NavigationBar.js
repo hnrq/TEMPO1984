@@ -31,8 +31,8 @@ export default class Navigation extends Component{
                <Nav className="mr-auto">
                     <LinkContainer to="/" style={{marginLeft:'-2px'}}><Nav.Link>¤</Nav.Link></LinkContainer>
                     <LinkContainer to=""><Nav.Link>Home</Nav.Link></LinkContainer>
-                    <LinkContainer to="time-left"><Nav.Link>Lifespan Timer</Nav.Link></LinkContainer>
-                    <LinkContainer to="what-to-do"><Nav.Link>What to Do</Nav.Link></LinkContainer>
+                    <LinkContainer to="time-left"><Nav.Link>Temporizador de vida</Nav.Link></LinkContainer>
+                    <LinkContainer to="what-to-do"><Nav.Link>O que fazer?</Nav.Link></LinkContainer>
                </Nav>
                < Nav pullright="true" className="nav-clock">
                     <span>{this.state.time.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>
