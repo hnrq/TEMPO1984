@@ -1,68 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TEMPO1984. 
 
-## Available Scripts
+Trabalho de Interação Humano Computador com o objetivo de conhecer melhor os principios da matéria aprendida em sala e entender melhor suas aplicações.
 
-In the project directory, you can run:
+Tópico: Estou vivendo a minha vida?
 
-### `npm start`
+## Personas 
+- Juliana Almeida (Passa maior parte do dia trabalhando em um Desktop, passou a se perguntar se está aproveitando sua vida) 
+- Marco Julio (Deseja viver desafios e aventuras, mas não sabe o que exatamente quer fazer neste quesito) 
+- Carla Paula (Acessa 99designs, gosta de descobrir cores e formas novas): 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Canção: Tempos Modernos, fragmento "Hoje o tempo voa, amor, escorre pelas mãos, mesmo sem se sentir, não há tempo que volte, amor, vamos viver tudo que há pra viver". Considerando o tempo como algo que deve ser aproveitado, pois somente se vive uma vez.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Casos de uso 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+### UC1 
+Quanto tempo me resta? O usuário informa sua data de nascimento, seu sexo e recebe o resultado de quanto tempo ainda viverá, baseado na expectativa média de vida no brasil pelo gênero.
+### UC2
+O que posso fazer para aproveitar minha vida? O usuário recebe aleatoriamente uma dica de algo para fazer em algum tópico escolhido por ele através da interface do programa.
+### UC3
+Como estender meu tempo de vida? O usuário recebe aleatoriamente uma dica de exercícios, alimentação ou algo que possa melhorar sua qualidade/tempo de vida.
+## Membros da equipe 
+Henrique Ramos e Mateus Santos
