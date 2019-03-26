@@ -1,0 +1,19 @@
+.category{
+    text-decoration: underline;
+    display: inline;
+    color:purple;
+    font-weight: bold;
+    font-size: 1.5rem;
+    &:hover{
+        color:white;
+        background: purple;
+        cursor: pointer;
+    }
+    margin-right: 30px;
+}
+
+@media(max-width:768px){
+    .category{
+        display: inline-block;
+    }
+}
