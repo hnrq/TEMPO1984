@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import Typed from 'react-typed';
 import {getLifespan} from '../utils/Time';
+import Typing from 'react-typing-animation';
 
 export default class TimeLeft extends Component{
     constructor(){
@@ -12,7 +13,8 @@ export default class TimeLeft extends Component{
             isResultReady: false,
             tapped: false,
             isMale: true,
-            birthday:''
+            birthday:'',
+            lifespan:''
         }
         this.startProgram = this.startProgram.bind(this);
         this.handleKeyPress = this.handleKeyPress.bind(this);
@@ -64,12 +66,7 @@ export default class TimeLeft extends Component{
         const birthday = new Date(splittedDate[0],--splittedDate[1],splittedDate[2]);
         const isMale = this.state.isMale;
         const lifespan = getLifespan(birthday,isMale);
-        this.setState({isResultReady: true});
-        this.resultText.strings = [`De acordo com meus calculos, voce ainda tem <b>${Math.round(lifespan / 1000)} segundos</b>, 
-                                ou <b>${Math.round(lifespan / 60000)} minutos</b>, ou <b>${Math.round(lifespan / 3600000)} horas</b> de vida, ou <b>${Math.round(lifespan / 86400000)} dias</b>.\n
-                                O que ta esperando? O <u>tempo voa</u>!`];
-        this.resultText.reset();
-        this.resultText.start();
+        this.setState({isResultReady: true,lifespan: lifespan});
     }
 
     startProgram(){
@@ -87,6 +84,13 @@ export default class TimeLeft extends Component{
         this.setState({
             isBirthdayInputVisible: true
         });
+    }
+
+    renderResult(){
+        if(this.state.lifespan !== '')
+            return (<p>De acordo com meus calculos, voce ainda tem <b>${Math.round(this.state.lifespan / 1000)} segundos</b>, 
+            ou <b>${Math.round(this.state.lifespan / 60000)} minutos</b>, ou <b>${Math.round(this.state.lifespan / 3600000)} horas</b> de vida, ou <b>${Math.round(this.state.lifespan / 86400000)} dias</b>.\n
+            O que ta esperando? O <u>tempo voa</u>!</p>);
     }
 
     birthdayInputHandler(e) {
@@ -121,9 +125,9 @@ export default class TimeLeft extends Component{
 
     render(){
         return(
-            <div ref={(div) => {this.lifespanTimer = div}} className="lifespan-timer"  tabIndex="0" onKeyPress={this.handleKeyPress} onTouchEnd={this.startProgram}>
+            <div ref={(div) => {this.lifespanTimer = div}} className="text-container"  tabIndex="0" onKeyPress={this.handleKeyPress} onTouchEnd={this.startProgram}>
                 <div className={`header ${this.state.programStarted ? 'invisible' : ''}`} >
-                    <h1><Typed typeSpeed={30} strings={['Lifespan Timer']} showCursor={false} onComplete={() => {this.subtitle.start()}}/></h1>
+                    <h1><Typed typeSpeed={30} strings={['Temporizador de Vida']} showCursor={false} onComplete={() => {this.subtitle.start()}}/></h1>
                     <h3><Typed typeSpeed={30} stopped={true}  typedRef={(subtitle) => { this.subtitle = subtitle; }} showCursor={false} onComplete={() => {}} strings={['Descubra quanto tempo de vida voce tem. <b>&lt;TOQUE&gt;</b> ou pressione <b>&lt;ENTER&gt;</b> para iniciar.']}/></h3>
                 </div>
                 
@@ -154,7 +158,6 @@ export default class TimeLeft extends Component{
                         showCursor={false}
                         strings={this.state.birthdayValidationMessage}
                         stopped={true} />
-                    
                     <p>
                         <Typed typeSpeed={30} startDelay={50}
                         typedRef={(finalText) => { this.finalText = finalText }}
@@ -176,13 +179,9 @@ export default class TimeLeft extends Component{
                     </p>
                 </div>
                 <div className={`lifespan-calculator ${this.state.programStarted && this.state.isResultReady ? '' : 'invisible'}`}>
-                    <p>
-                        <Typed typeSpeed={30}
-                        typedRef={(resultText) => { this.resultText = resultText }}
-                        showCursor={true}
-                        strings={['']}
-                        stopped={true} />
-                    </p>
+                    <Typing speed={30}>
+                        {this.renderResult()}
+                    </Typing>
                 </div>
             </div>
             
