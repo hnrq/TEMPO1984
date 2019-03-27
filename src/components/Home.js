@@ -7,8 +7,8 @@ export default class Home extends Component{
             <div className="home">
                 <div className="program-container">
                     <Program programName="Temporizador de vida" to="time-left"/>
-                    <Program programName="Quero aproveitar melhor a vida" to="what-to-do"/>
-                    <Program programName="Quero mais tempo de vida." to="what-to-do"/>
+                    <Program programName="Quero aproveitar mais" to="what-to-do"/>
+                    <Program programName="Quero viver mais" to="what-to-do"/>
                 </div>
             </div>
         )

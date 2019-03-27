@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import Typed from 'react-typed';
 import {getLifespan} from '../utils/Time';
-import Typing from 'react-typing-animation';
 
 export default class TimeLeft extends Component{
     constructor(){
@@ -22,6 +21,7 @@ export default class TimeLeft extends Component{
         this.showBirthdayInput = this.showBirthdayInput.bind(this);
         this.birthdayInputHandler = this.birthdayInputHandler.bind(this);
         this.showResults = this.showResults.bind(this);
+        this.renderResults = this.renderResults.bind(this);
     }
 
     handleKeyPress(e){
@@ -61,14 +61,35 @@ export default class TimeLeft extends Component{
         e.preventDefault()
     }
     
-    showResults(){
+    showResults() {
         const splittedDate = this.state.birthday.split('-');
-        const birthday = new Date(splittedDate[0],--splittedDate[1],splittedDate[2]);
+        const birthday = new Date(splittedDate[0], --splittedDate[1], splittedDate[2]);
         const isMale = this.state.isMale;
-        const lifespan = getLifespan(birthday,isMale);
-        this.setState({isResultReady: true,lifespan: lifespan});
+        this.setState({lifespan: getLifespan(birthday, isMale)});
     }
 
+    renderResults(){
+        const lifespan = this.state.lifespan;
+        if(lifespan){
+            const seconds = Math.round(lifespan / 1000);
+            const minutes = Math.round(lifespan / 60000)
+            const hours = Math.round(lifespan / 3600000)
+            const days = Math.round(lifespan / 86400000)
+            return (
+            <p>
+                <Typed typeSpeed={30}
+                typedRef={(resultText) => { this.resultText = resultText }}
+                showCursor={true}
+                strings={[`De acordo com meus calculos, voce ainda tem <b>${seconds} segundos</b>, 
+                            ou <b>${minutes} minutos</b>, 
+                            ou <b>${hours} horas</b>, 
+                            ou <b>${days} dias de vida</b>.\n
+                            O que ta esperando? O <u>tempo voa</u>!`]}
+                />
+            </p>);
+        }
+
+    }
     startProgram(){
         this.setState({
             programStarted: true
@@ -84,13 +105,6 @@ export default class TimeLeft extends Component{
         this.setState({
             isBirthdayInputVisible: true
         });
-    }
-
-    renderResult(){
-        if(this.state.lifespan !== '')
-            return (<p>De acordo com meus calculos, voce ainda tem <b>${Math.round(this.state.lifespan / 1000)} segundos</b>, 
-            ou <b>${Math.round(this.state.lifespan / 60000)} minutos</b>, ou <b>${Math.round(this.state.lifespan / 3600000)} horas</b> de vida, ou <b>${Math.round(this.state.lifespan / 86400000)} dias</b>.\n
-            O que ta esperando? O <u>tempo voa</u>!</p>);
     }
 
     birthdayInputHandler(e) {
@@ -131,7 +145,7 @@ export default class TimeLeft extends Component{
                     <h3><Typed typeSpeed={30} stopped={true}  typedRef={(subtitle) => { this.subtitle = subtitle; }} showCursor={false} onComplete={() => {}} strings={['Descubra quanto tempo de vida voce tem. <b>&lt;TOQUE&gt;</b> ou pressione <b>&lt;ENTER&gt;</b> para iniciar.']}/></h3>
                 </div>
                 
-                <div className={`lifespan-calculator ${this.state.programStarted && !this.state.isResultReady ? '' : 'invisible'}`}>
+                <div className={`lifespan-calculator ${this.state.programStarted && !this.state.lifespan ? '' : 'invisible'}`}>
                     <p><Typed typeSpeed={30} stopped={true}  typedRef={(genderSelect) => { this.genderSelect = genderSelect }} showCursor={false} onComplete={() => {this.genderInput.start()}} strings={['Escolha seu sexo (<b>&lt;TOQUE_DUPLO&gt;</b> no texto roxo ou setas <b>&lt;CIMA&gt;</b> e <b>&lt;BAIXO&gt;</b> para alternar as opçoes, <b>&lt;ENTER&gt;</b> ou  <b>&lt;TOQUE&gt;</b> no texto roxo para confirmar):']}/> 
                         <span id="gender-input" 
                                 onKeyDown={this.handleSelectKeys} tabIndex="0"
@@ -178,10 +192,8 @@ export default class TimeLeft extends Component{
                         stopped={true} onComplete={() => {this.showResults()}}/>
                     </p>
                 </div>
-                <div className={`lifespan-calculator ${this.state.programStarted && this.state.isResultReady ? '' : 'invisible'}`}>
-                    <Typing speed={30}>
-                        {this.renderResult()}
-                    </Typing>
+                <div className={`lifespan-calculator`}>
+                    {this.renderResults()}
                 </div>
             </div>
             
