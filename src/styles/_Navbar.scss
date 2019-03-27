@@ -14,7 +14,6 @@ nav.navbar.navbar-expand {
             height: 30px;
             overflow: hidden;
             text-align: center;
-
             &:hover {
                 background-color: black;
                 color: white;
@@ -57,5 +56,10 @@ hr {
 @media(max-width : 430px) {
     .nav-clock {
         display: none;
+    }
+    .text-link {
+        font-size: 15px;
+        width:33.3%;
+        padding: 0em 0.3em;
     }
 }

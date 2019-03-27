@@ -141,7 +141,7 @@ export default class TimeLeft extends Component{
         return(
             <div ref={(div) => {this.lifespanTimer = div}} className="text-container"  tabIndex="0" onKeyPress={this.handleKeyPress} onTouchEnd={this.startProgram}>
                 <div className={`header ${this.state.programStarted ? 'invisible' : ''}`} >
-                    <h1><Typed typeSpeed={30} strings={['Temporizador de Vida']} showCursor={false} onComplete={() => {this.subtitle.start()}}/></h1>
+                    <h1><Typed typeSpeed={30} strings={['Calculadora de vida']} showCursor={false} onComplete={() => {this.subtitle.start()}}/></h1>
                     <h3><Typed typeSpeed={30} stopped={true}  typedRef={(subtitle) => { this.subtitle = subtitle; }} showCursor={false} onComplete={() => {}} strings={['Descubra quanto tempo de vida voce tem. <b>&lt;TOQUE&gt;</b> ou pressione <b>&lt;ENTER&gt;</b> para iniciar.']}/></h3>
                 </div>
                 

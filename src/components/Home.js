@@ -6,9 +6,9 @@ export default class Home extends Component{
         return(
             <div className="home">
                 <div className="program-container">
-                    <Program programName="Temporizador de vida" to="time-left"/>
-                    <Program programName="Quero aproveitar mais" to="what-to-do"/>
-                    <Program programName="Quero viver mais" to="what-to-do"/>
+                    <Program programName="Calculadora de vida" to="time-left"/>
+                    <Program programName="Aproveitar mais" to="what-to-do"/>
+                    <Program programName="Viver mais" to="what-to-do"/>
                 </div>
             </div>
         )
