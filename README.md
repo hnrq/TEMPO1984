@@ -11,6 +11,14 @@ Tópico: Estou vivendo a minha vida?
 
 Canção: Tempos Modernos, fragmento "Hoje o tempo voa, amor, escorre pelas mãos, mesmo sem se sentir, não há tempo que volte, amor, vamos viver tudo que há pra viver". Considerando o tempo como algo que deve ser aproveitado, pois somente se vive uma vez.
 
+
+
+## Como executar
+Para executar este programa, é necessário ter [npm](https://www.npmjs.com) ou [Yarn](https://yarnpkg.com/) instalado em sua máquina, em seguida, execute o comando ```start```, dependendo do gerenciador de pacotes instalado. Exemplo:
+```yarn start```
+### Live Demo
+Caso não queira baixar o código para executá-lo, você pode ver uma demonstração [aqui](https://alberoneramos.github.io/TEMPO1984/)
+
 ## Casos de uso 
 
 ### UC1 
