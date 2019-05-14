@@ -33,6 +33,7 @@ export default class Navigation extends Component{
                     <LinkContainer to="time-left"><Nav.Link className={'text-link'}>Calculadora de vida</Nav.Link></LinkContainer>
                     <LinkContainer to="what-to-do"><Nav.Link className={'text-link'}>Aproveitar mais</Nav.Link></LinkContainer>
                     <LinkContainer to="what-to-do"><Nav.Link className={'text-link'}>Viver mais</Nav.Link></LinkContainer>
+                    <LinkContainer to="exercise-time"><Nav.Link className={'text-link'}>Exercicios no tempo livre</Nav.Link></LinkContainer>
                </Nav>
                < Nav pullright="true" className="nav-clock">
                     <span>{this.state.time.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}</span>

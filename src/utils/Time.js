@@ -4,6 +4,6 @@ export const getLifespan = (birthday, isMale) => {
     return birth - new Date();
 }
 
-
+export const toMinutes = (time) => Number(time.split(':')[0]) * 60 + Number(time.split(':')[1]);
 
 

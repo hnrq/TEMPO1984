@@ -4,6 +4,8 @@ import PageHeader from './PageHeader';
 import Home from './Home';
 import LifespanTimer from './LifespanTimer';
 import FreeTimeRandom from './FreeTimeRandom';
+import HealthTips from './HealthTips';
+import ExercisesTime from './ExercisesTime';
 import {ArrowIcon,ResizeIcon} from '../assets/SVGs';
 
 class Container extends Component{
@@ -34,6 +36,8 @@ class Container extends Component{
                 <Route path="/" exact component={Home}/>
                 <Route path="/time-left" component={LifespanTimer}/>
                 <Route path="/what-to-do" component={FreeTimeRandom}/>
+                <Route path="/health-tips" component={HealthTips}/>
+                <Route path="/exercise-time" component={ExercisesTime}/>
                 {this.renderBorders(this.props.location.pathname)}
             </div>
         );

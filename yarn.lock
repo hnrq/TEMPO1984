@@ -8672,6 +8672,11 @@ react-scripts@2.1.8:
   optionalDependencies:
     fsevents "1.2.4"
 
+react-simple-timefield@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-simple-timefield/-/react-simple-timefield-2.0.3.tgz#24c2bdd505e698850c8b490c308ab0f3721b486d"
+  integrity sha512-xbQAwuDIeI+pOPRMTdmGuR4mkb5TaxMdrQQgo8JqJ8/SOR0sFJvuie4Ih9QhmW+I/vyfuOr4sAq6WpL6esP8Eg==
+
 react-transition-group@^2.5.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.6.1.tgz#abf4a95e2f13fb9ba83a970a896fedbc5c4856a2"

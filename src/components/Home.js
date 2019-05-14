@@ -9,6 +9,7 @@ export default class Home extends Component{
                     <Program programName="Calculadora de vida" to="time-left"/>
                     <Program programName="Aproveitar mais" to="what-to-do"/>
                     <Program programName="Viver mais" to="what-to-do"/>
+                    <Program programName="Exercicios no tempo livre" to="exercise-time"/>
                 </div>
             </div>
         )

@@ -159,7 +159,7 @@ export default class TimeLeft extends Component{
                         </span>
                     </p>
                     <p style={{margin:0}}><Typed typeSpeed={30} stopped={true} onComplete={() => {this.showBirthdayInput(); this.birthdayInput.focus()}} typedRef={(birthdayType) => { this.birthdayType = birthdayType }} showCursor={false} strings={['Otimo! Agora, digite seu aniversario: ']}/> 
-                        <input  ref={(input) => { this.birthdayInput = input }} 
+                        <input ref={(input) => { this.birthdayInput = input }} 
                             type="date"     
                             onChange={this.birthdayInputHandler} 
                             value={this.state.birthday} 
