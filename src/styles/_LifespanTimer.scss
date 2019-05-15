@@ -1,12 +1,14 @@
 .text-container {
     padding: 2vh 4vw;
     color: black;
+
     & b {
         font-weight: 100;
-        font-size:2rem;
+        font-size: 2rem;
         color: gray;
         text-decoration: underline;
     }
+
     & h1 {
         font-weight: bold;
         margin: 0;
@@ -15,19 +17,21 @@
     }
 
     & h3 {
-        line-height: 1.15rem;
+        line-height: 1.5rem;
     }
-    .lifespan-calculator{
-        & > p {
-            line-height:1.5rem;
-          & > #gender-input{
-                color:purple;
+
+    .lifespan-calculator {
+        &>p {
+            line-height: 1.5rem;
+
+            &>#gender-input {
+                color: purple;
                 font-size: 1.3rem;
-                font-weight:bold;
+                font-weight: bold;
                 margin: 0vh 1vw;
-                width:100px;
-            }  
-        } 
+                width: 100px;
+            }
+        }
     }
 }
 
@@ -48,14 +52,14 @@
     }
 }
 
-.birthday-input{
-    border:none;
-    color:purple;
+.birthday-input {
+    border: none;
+    color: purple;
     font-weight: 800;
     margin: 0 2vw;
 }
 
-.validation-message{
+.validation-message {
     line-height: 1.15rem;
     display: inline-block;
 }

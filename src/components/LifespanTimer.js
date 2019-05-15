@@ -75,21 +75,22 @@ export default class TimeLeft extends Component{
             const minutes = Math.round(lifespan / 60000)
             const hours = Math.round(lifespan / 3600000)
             const days = Math.round(lifespan / 86400000)
+            const finalString = `De acordo com meus calculos, voce ainda tem <b>${seconds} segundos</b>, 
+                            ou <b>${minutes} minutos</b>, 
+                            ou <b>${hours} horas</b>, 
+                            ou <b>${days} dias de vida</b>.\n
+                            O que ta esperando? O <u>tempo voa</u>!`;
             return (
             <p>
                 <Typed typeSpeed={30}
                 typedRef={(resultText) => { this.resultText = resultText }}
                 showCursor={true}
-                strings={[`De acordo com meus calculos, voce ainda tem <b>${seconds} segundos</b>, 
-                            ou <b>${minutes} minutos</b>, 
-                            ou <b>${hours} horas</b>, 
-                            ou <b>${days} dias de vida</b>.\n
-                            O que ta esperando? O <u>tempo voa</u>!`]}
+                strings={[finalString]}
                 />
             </p>);
         }
-
     }
+
     startProgram(){
         this.setState({
             programStarted: true
@@ -137,6 +138,16 @@ export default class TimeLeft extends Component{
         }
     }
 
+    componentWillUnmount(){
+        this.genderInput = null;
+        this.genderSelect = null;
+    }
+
+    startGenderInput = () => {
+        if(this.genderInput)
+            this.genderInput.start();
+    }
+
     render(){
         return(
             <div ref={(div) => {this.lifespanTimer = div}} className="text-container"  tabIndex="0" onKeyPress={this.handleKeyPress} onTouchEnd={this.startProgram}>
@@ -146,7 +157,7 @@ export default class TimeLeft extends Component{
                 </div>
                 
                 <div className={`lifespan-calculator ${this.state.programStarted && !this.state.lifespan ? '' : 'invisible'}`}>
-                    <p><Typed typeSpeed={30} stopped={true}  typedRef={(genderSelect) => { this.genderSelect = genderSelect }} showCursor={false} onComplete={() => {this.genderInput.start()}} strings={['Escolha seu sexo (<b>&lt;TOQUE_DUPLO&gt;</b> no texto roxo ou setas <b>&lt;CIMA&gt;</b> e <b>&lt;BAIXO&gt;</b> para alternar as opçoes, <b>&lt;ENTER&gt;</b> ou  <b>&lt;TOQUE&gt;</b> no texto roxo para confirmar):']}/> 
+                    <p><Typed typeSpeed={30} stopped={true}  typedRef={(genderSelect) => { this.genderSelect = genderSelect }} showCursor={false} onComplete={() => {this.startGenderInput()}} strings={['Escolha seu sexo (<b>&lt;TOQUE_DUPLO&gt;</b> no texto roxo ou setas <b>&lt;CIMA&gt;</b> e <b>&lt;BAIXO&gt;</b> para alternar as opçoes, <b>&lt;ENTER&gt;</b> ou  <b>&lt;TOQUE&gt;</b> no texto roxo para confirmar):']}/> 
                         <span id="gender-input" 
                                 onKeyDown={this.handleSelectKeys} tabIndex="0"
                                 onTouchEnd={this.handleSelectKeys} ref={(span) => {this.genderSpan = span}}>
