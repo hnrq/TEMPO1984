@@ -13,6 +13,8 @@ Canção: Tempos Modernos, fragmento "Hoje o tempo voa, amor, escorre pelas mão
 
 ## Artefatos
 Na pasta doc estão contidas as especificações dos trabalhos 1 (Aquecimento) e 2, além dos artefatos produzidos nas fases de aquecimento, 1, 2 e 3.
+### Apresentação em vídeo
+A demonstração e detalhamento do projeto pode ser vista através do vídeo, disponível [neste link](https://youtu.be/cAa18ZdLKtw).
 
 ## Como executar
 Para executar este programa, é necessário ter [npm](https://www.npmjs.com) ou [Yarn](https://yarnpkg.com/) instalado em sua máquina, em seguida, execute o comando ```start```, dependendo do gerenciador de pacotes instalado. Exemplo:
