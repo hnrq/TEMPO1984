@@ -11,15 +11,16 @@ Tópico: Estou vivendo a minha vida?
 
 Canção: Tempos Modernos, fragmento "Hoje o tempo voa, amor, escorre pelas mãos, mesmo sem se sentir, não há tempo que volte, amor, vamos viver tudo que há pra viver". Considerando o tempo como algo que deve ser aproveitado, pois somente se vive uma vez.
 
+## Artefatos
+Na pasta doc estão contidas as especificações dos trabalhos 1 (Aquecimento) e 2, além dos artefatos produzidos nas fases de aquecimento, 1, 2 e 3.
+
 ## Como executar
 Para executar este programa, é necessário ter [npm](https://www.npmjs.com) ou [Yarn](https://yarnpkg.com/) instalado em sua máquina, em seguida, execute o comando ```start```, dependendo do gerenciador de pacotes instalado. Exemplo:
 ```yarn start```
-
 ### Live Demo
 Caso não queira baixar o código para executá-lo, você pode ver uma demonstração [aqui](https://alberoneramos.github.io/TEMPO1984/)
 
 ## Casos de uso 
-
 ### UC1 
 Quanto tempo me resta? O usuário informa sua data de nascimento, seu sexo e recebe o resultado de quanto tempo ainda viverá, baseado na expectativa média de vida no brasil pelo gênero.
 ### UC2
@@ -28,5 +29,7 @@ O que posso fazer para aproveitar minha vida? O usuário recebe aleatoriamente u
 Como estender meu tempo de vida? O usuário recebe aleatoriamente uma dica de exercícios, alimentação ou algo que possa melhorar sua qualidade/tempo de vida.
 ### UC4
 Que exercícios fazer no meu tempo livre? O usuário informa o tempo livre disponível no dia e recebe dicas de exercícios que pode realizar neste espaço.
+
 ## Membros da equipe 
 Henrique Ramos e Mateus Santos
+
