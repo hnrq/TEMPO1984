@@ -1,10 +1,18 @@
-@import "~bootstrap/scss/bootstrap";
-@import "styles/Image";
-@import "styles/Home";
-@import "styles/LifespanTimer";
-@import "styles/Navbar";
-@import "styles/Program";
-@import "styles/Container";
-@import "styles/Category";
-@import "styles/Fonts";
-@import "styles/General";
+@import '~bootstrap/scss/bootstrap';
+@import 'styles/Image';
+@import 'styles/Home';
+@import 'styles/LifespanTimer';
+@import 'styles/Navbar';
+@import 'styles/Program';
+@import 'styles/Container';
+@import 'styles/Category';
+@import 'styles/Fonts';
+@import 'styles/General';
+
+body {
+	background-image: linear-gradient(45deg, #000 25%, transparent 25%),
+		linear-gradient(-45deg, #000 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #000 75%),
+		linear-gradient(-45deg, transparent 75%, #000 75%);
+	background-size: 4px 4px;
+	background-position: 0 0, 0 2px, 2px -2px, -2px 0px;
+}

@@ -1,39 +1,39 @@
 {
-  "name": "tempo",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "http://alberoneramos.github.io/TEMPO1984/",
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "gh-pages": "^2.0.1",
-    "node-sass": "^4.11.0",
-    "react": "^16.8.4",
-    "react-bootstrap": "^1.0.0-beta.5",
-    "react-dom": "^16.8.4",
-    "react-input-mask": "^2.0.4",
-    "react-router": "^4.3.1",
-    "react-router-bootstrap": "^0.24.4",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "2.1.8",
-    "react-simple-timefield": "^2.0.3",
-    "react-typed": "^1.1.1",
-    "react-typing-animation": "^1.6.2",
-    "text-mask": "^0.0.2"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+	"name": "tempo",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "http://alberoneramos.github.io/TEMPO1984/",
+	"dependencies": {
+		"bootstrap": "^4.4.1",
+		"gh-pages": "^2.2.0",
+		"node-sass": "^4.13.1",
+		"react": "^16.12.0",
+		"react-bootstrap": "^1.0.0-beta.16",
+		"react-dom": "^16.12.0",
+		"react-input-mask": "^2.0.4",
+		"react-router": "^5.1.2",
+		"react-router-bootstrap": "^0.25.0",
+		"react-router-dom": "^5.1.2",
+		"react-scripts": "3.4.0",
+		"react-simple-timefield": "^3.0.0",
+		"react-typed": "^1.2.0",
+		"react-typing-animation": "^1.6.2",
+		"text-mask": "^0.0.2"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "",
+		"eject": "react-scripts eject",
+		"deploy": "gh-pages -d build"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": [
+		">0.2%",
+		"not dead",
+		"not ie <= 11",
+		"not op_mini all"
+	]
 }
