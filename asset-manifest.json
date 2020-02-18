@@ -1,15 +1,24 @@
 {
-  "main.css": "/TEMPO1984/static/css/main.59edcabf.chunk.css",
-  "main.js": "/TEMPO1984/static/js/main.d250c8f6.chunk.js",
-  "main.js.map": "/TEMPO1984/static/js/main.d250c8f6.chunk.js.map",
-  "runtime~main.js": "/TEMPO1984/static/js/runtime~main.608ce1c8.js",
-  "runtime~main.js.map": "/TEMPO1984/static/js/runtime~main.608ce1c8.js.map",
-  "static/js/2.cec3281b.chunk.js": "/TEMPO1984/static/js/2.cec3281b.chunk.js",
-  "static/js/2.cec3281b.chunk.js.map": "/TEMPO1984/static/js/2.cec3281b.chunk.js.map",
-  "index.html": "/TEMPO1984/index.html",
-  "precache-manifest.55cad1af104ee2a04a366e7fff4daf00.js": "/TEMPO1984/precache-manifest.55cad1af104ee2a04a366e7fff4daf00.js",
-  "service-worker.js": "/TEMPO1984/service-worker.js",
-  "static/css/main.59edcabf.chunk.css.map": "/TEMPO1984/static/css/main.59edcabf.chunk.css.map",
-  "static/media/App.scss": "/TEMPO1984/static/media/FindersKeepers.5aa2bf91.ttf",
-  "static/media/loading.gif": "/TEMPO1984/static/media/loading.88714a27.gif"
+  "files": {
+    "main.css": "/TEMPO1984/static/css/main.375b9ae2.chunk.css",
+    "main.js": "/TEMPO1984/static/js/main.055aeed2.chunk.js",
+    "main.js.map": "/TEMPO1984/static/js/main.055aeed2.chunk.js.map",
+    "runtime-main.js": "/TEMPO1984/static/js/runtime-main.edd4cbe4.js",
+    "runtime-main.js.map": "/TEMPO1984/static/js/runtime-main.edd4cbe4.js.map",
+    "static/js/2.c097ea6a.chunk.js": "/TEMPO1984/static/js/2.c097ea6a.chunk.js",
+    "static/js/2.c097ea6a.chunk.js.map": "/TEMPO1984/static/js/2.c097ea6a.chunk.js.map",
+    "index.html": "/TEMPO1984/index.html",
+    "precache-manifest.28524d8d376c935aa8bcf4f8f2a3d56f.js": "/TEMPO1984/precache-manifest.28524d8d376c935aa8bcf4f8f2a3d56f.js",
+    "service-worker.js": "/TEMPO1984/service-worker.js",
+    "static/css/main.375b9ae2.chunk.css.map": "/TEMPO1984/static/css/main.375b9ae2.chunk.css.map",
+    "static/js/2.c097ea6a.chunk.js.LICENSE.txt": "/TEMPO1984/static/js/2.c097ea6a.chunk.js.LICENSE.txt",
+    "static/media/App.scss": "/TEMPO1984/static/media/FindersKeepers.5aa2bf91.ttf",
+    "static/media/loading.gif": "/TEMPO1984/static/media/loading.88714a27.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.edd4cbe4.js",
+    "static/js/2.c097ea6a.chunk.js",
+    "static/css/main.375b9ae2.chunk.css",
+    "static/js/main.055aeed2.chunk.js"
+  ]
 }
