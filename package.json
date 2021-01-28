@@ -2,7 +2,7 @@
 	"name": "tempo1984",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "http://alberoneramos.github.io/TEMPO1984",
+	"homepage": "http://hnrq.github.io/TEMPO1984",
 	"dependencies": {
 		"bootstrap": "^4.4.1",
 		"node-sass": "^4.13.1",
