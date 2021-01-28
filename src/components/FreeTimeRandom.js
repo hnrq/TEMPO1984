@@ -32,7 +32,7 @@ export default class FreeTimeRandom extends Component{
         return(
             <div ref={(div) => {this.lifespanTimer = div}} className={`text-container`} tabIndex="0">
                 <div className={this.state.tip ? 'invisible' : ''}>
-                    <h1><Typed showCursor={false} typedRef={(title) => {this.title = title}} onComplete={() => {this.description.start()}} typeSpeed={30} strings={['Quero aproveitar melhor a vida']}/></h1>
+                    <h1><Typed showCursor={false} typedRef={(title) => {this.title = title}} onComplete={() => {this.description.start()}} typeSpeed={30} strings={['I want to enjoy my life better']}/></h1>
                     <h3><Typed stopped={true} onComplete={() => {this.personalDevelopment.start()}} showCursor={false} typedRef={(description) => {this.description = description}} typeSpeed={30} strings={['Are you bored right now? Need an advice? Choose an option to receive a suggestion:']}/></h3>
                     <div style={{display:'block'}}><span className="category" onClick={() => {this.getTip(PERSONAL_DEVELOPMENT)}}><Typed stopped={true} onComplete={() => {this.fun.start()}} showCursor={false} typedRef={(personalDevelopment) => {this.personalDevelopment = personalDevelopment}} typeSpeed={30} strings={['Personal development']}/></span></div>
                     <div style={{display:'block'}}><span className="category" onClick={() => {this.getTip(FUN)}}><Typed stopped={true} onComplete={() => {this.habilities.start()}} showCursor={false} typedRef={(fun) => {this.fun = fun}} typeSpeed={30} strings={['Fun']}/></span></div>
