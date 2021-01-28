@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e3077fd660b40d71daed36e828604a82",
+    "revision": "d8eb8adb112dabee737de60615c6c7ea",
     "url": "/TEMPO1984/index.html"
   },
   {
-    "revision": "6bf1e40d9631195368bf",
+    "revision": "db55f297d93a1bb3b030",
     "url": "/TEMPO1984/static/css/main.f1ea9b26.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TEMPO1984/static/js/2.1ebdd6bd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6bf1e40d9631195368bf",
-    "url": "/TEMPO1984/static/js/main.bb7b5dd3.chunk.js"
+    "revision": "db55f297d93a1bb3b030",
+    "url": "/TEMPO1984/static/js/main.103dff5a.chunk.js"
   },
   {
     "revision": "7ad0f7d2df646fd58fc2",
