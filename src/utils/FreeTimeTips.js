@@ -4,38 +4,33 @@ export const HABILITIES = 3;
 
 export const tips = [
     {
-        title: 'Fale com você tão generosamente quanto fala com um amigo',
-        desc: 'A linguagem que usamos para falar de nos mesmos e algo que seria inaceitavel de dizer para outras pessoas. Comece a conversar consigo da mesma maneira que conversa com seu melhor amigo.',
+        title: 'Don\'t be too harsh on yourself',
+        desc: 'Sometimes, we are a little too harsh with ourselves, making self-improvement much harder. Take your time, sit down and write about what you\'ve achieved and what you can improve, it will surely help you.',
         category: PERSONAL_DEVELOPMENT
     },
     {
-        title: 'Abra mão de relações tóxicas',
-        desc: 'Algumas pessoas sao buracos negros emocionais. Para elas, seu amor, atenção e apreciação nunca sao suficientes. A primeira vista sao muito charmosas, mas, com o tempo, voce percebe que estar perto dela te faz mais mal do que bem. Deixe-a ir.',
+        title: 'Let go of toxic relationships',
+        desc: 'Some people are emotional black holes. Your love, acknowledgement and attention are never enough. Usually, they\'re charming, but time shows you that being near them is bad for you. It will be hard, but let it go.',
         category: PERSONAL_DEVELOPMENT
     },
     {
-        title: 'Esteja aberto a conhecer novos amigos',
-        desc: 'As vezes, depois de terminar um relacionamento doloroso, nos fechamos e nao queremos mais correr o risco de nos machucar novamente. No entanto, pesquisas indicam que <a href="https://news.harvard.edu/gazette/story/2017/04/over-nearly-80-years-harvard-study-has-been-showing-how-to-live-a-healthy-and-happy-life/">a qualidade de nossos relacionamentos influencia bastante em nossa felicidade durante a vida</a>. Por isso, nao se abale com um relacionamento ruim, va conhecer novas pessoas!',
+        title: 'Be open to new relationships',
+        desc: 'Sometimes, after going through a painful relationship, we don\'t want to risk again because we are afraid of getting hurt. However, studies show that <a href="https://news.harvard.edu/gazette/story/2017/04/over-nearly-80-years-harvard-study-has-been-showing-how-to-live-a-healthy-and-happy-life/">the quality of our relationships can are a big thing in a happy life</a>. So, don\'t let a bad relationship get on your way! You are going to meet a lot of awesome people!',
         category: PERSONAL_DEVELOPMENT
     }, 
     {
-        title: 'Vá pescar',
-        desc: 'Provavelmente voce ja ouviu o ditado que diz "Ta com raiva? Vai pescar!". No entanto, pescar pode ser uma atividade bastante relaxante, mas nao faça como Bruno & Marrone, va pescar mesmo!',
+        title: 'Play some games',
+        desc: 'Videogames are one hell of a nice hobby. You can meet new people while having a lot of fun. It also <a href="https://www.webmd.com/brain/news/20100913/action-video-game-help-decision-making">helps improving decision making speed</a> and teamplay.',
         category: FUN
     },
     {
-        title: 'Jogue alguma coisa',
-        desc: 'Jogos eletronicos podem ser bem divertidos e bons passatempos. Eles tambem podem <a href="https://www.google.com/search?ei=smXaXNnoGaOa5OUPtpigIA&q=Games+help+with+decision+making&oq=Games+help+with+decision+making&gs_l=psy-ab.3..0i13i5i30j0i8i13i30.1977.10062..10151...1.0..2.671.5379.0j15j3j0j2j2......0....1..gws-wiz.....6..35i39j0j0i22i30j0i22i10i30j0i203j33i22i29i30.qZ7pDkR3z1Y">ajudar a melhorar a tomada de decisoes</a> e <a href="https://www.rochester.edu/newscenter/playing-action-video-games-can-boost-learning-78452/">melhorar a apredizagem</a>.',
-        category: FUN
-    },
-    {
-        title: 'Aprenda um instrumento musical',
-        desc: 'Alem de ajudar a socializar, saber tocar um instrumento te ajuda alivia o estresse e <a href="https://www.universityherald.com/articles/4701/20130928/playing-musical-instruments-helps-avoid-mental-illness-study.htm">ajuda a prevenir doencas mentais</a>. Por isso, aprenda a tocar qualquer coisa <span style="color:white">menos Legiao Urbana e Los Hermanos</span>.',
+        title: 'Play some music',
+        desc: 'Learning how to play an instrument helps you to relieve stress, <a href="https://www.universityherald.com/articles/4701/20130928/playing-musical-instruments-helps-avoid-mental-illness-study.htm"> prevents mental diseases</a> and is a very charming skill. So, grab your father\'s guitar and go play some Johnny Cash!',
         category: HABILITIES
     },
     {
-        title: 'Leia!',
-        desc : 'Leitura ajuda a desenvolver vocabulario, criatividade e, assim como tocar um instrumento, <a href="http://time.com/5295455/dementia-aging-brain-reading/">pode ajudar a prevenir doencas mentais</a>.',
+        title: 'Read',
+        desc : 'Reading helps you to have a broader vocab, improves creativity and also <a href="http://time.com/5295455/dementia-aging-brain-reading/">helps to prevent mental diseases</a>.',
         category: HABILITIES
     }
 ]

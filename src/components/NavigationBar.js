@@ -17,16 +17,16 @@ const NavigationBar = () => {
 						<Nav.Link>¤</Nav.Link>
 					</LinkContainer>
 					<LinkContainer to="time-left">
-						<Nav.Link className={'text-link'}>Calculadora de vida</Nav.Link>
+						<Nav.Link className={'text-link'}>Lifespan calculator</Nav.Link>
 					</LinkContainer>
 					<LinkContainer to="what-to-do">
-						<Nav.Link className={'text-link'}>Aproveitar mais</Nav.Link>
+						<Nav.Link className={'text-link'}>Enjoy better</Nav.Link>
 					</LinkContainer>
 					<LinkContainer to="health-tips">
-						<Nav.Link className={'text-link'}>Viver mais</Nav.Link>
+						<Nav.Link className={'text-link'}>Live more</Nav.Link>
 					</LinkContainer>
 					<LinkContainer to="exercise-time">
-						<Nav.Link className={'text-link'}>Exercicios no tempo livre</Nav.Link>
+						<Nav.Link className={'text-link'}>Exercises</Nav.Link>
 					</LinkContainer>
 				</Nav>
 				<Nav pullright="true" className="nav-clock">

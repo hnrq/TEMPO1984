@@ -1,7 +1,7 @@
 export const exercises = {
-    long: ['musculaçao','nataçao','pilates','crossfit','Muay Thai'],
-    medium: ['corrida', 'ciclismo'],
-    short: ['abdominais','barras','alongamentos']
+    long: ['weight training','swimming','pilates','crossfit','Muay Thai'],
+    medium: ['jogging', 'ciclyng'],
+    short: ['abdominals','pull-ups', 'push-ups','stretching']
 }
 
 export default exercises;

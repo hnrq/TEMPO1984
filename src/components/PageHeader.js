@@ -25,13 +25,13 @@ const Navigation = () => {
 						style={{ width: '100%', margin: '-2px 0px 0px 0px', border: '2px solid black' }}
 					>
 						<Col>
-							<span>3 itens</span>
+							<span>3 items</span>
 						</Col>
 						<Col className="text-center">
-							<span>211K na pasta</span>
+							<span>211K in disk</span>
 						</Col>
 						<Col style={{ textAlign: 'right' }}>
-							<span>177K disponíveis</span>
+							<span>177K available</span>
 						</Col>
 					</Row>
 					<hr style={{ zIndex: 20 }} />

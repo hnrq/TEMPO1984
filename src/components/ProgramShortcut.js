@@ -2,11 +2,11 @@ import React from 'react';
 import { ProgramIcon } from '../assets/SVGs';
 import { LinkContainer } from 'react-router-bootstrap';
 
-const Program = () => (
-	<LinkContainer to={this.props.to}>
+const Program = ({ to, programName }) => (
+	<LinkContainer to={to}>
 		<div className="program">
 			<ProgramIcon />
-			<figcaption>{this.props.programName}</figcaption>
+			<figcaption>{programName}</figcaption>
 		</div>
 	</LinkContainer>
 );

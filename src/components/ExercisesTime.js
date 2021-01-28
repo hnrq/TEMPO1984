@@ -24,26 +24,26 @@ export default class ExercisesTime extends Component {
 
     getResult(){
         var asMinutes = toMinutes(this.state.freeTime);
-        var exerciseReturn = ['De acordo com meus calculos, voce pode fazer '];
+        var exerciseReturn = ['According to my math, you can '];
         var exercises = exercisesArray;
         exercises.long.sort(() => (0.5 - Math.random()));
         exercises.medium.sort(() => (0.5 - Math.random()));
         exercises.short.sort(() => (0.5 - Math.random()));
         while(asMinutes >= 60 && exercises.long.length > 0){
-            exerciseReturn.push(`${exercises.long.pop()} durante 1 hora`);
+            exerciseReturn.push(`${exercises.long.pop()} for an hour`);
             asMinutes-=60;
         }
         while(asMinutes >= 30 && exercises.medium.length > 0){
-            exerciseReturn.push(`${exercises.medium.pop()} durante 30 minutos`);
+            exerciseReturn.push(`${exercises.medium.pop()} for 30 minutes`);
             asMinutes-=30;
         }
         while(asMinutes >= 10 && exercises.short.length > 0){
-            exerciseReturn.push(`${exercises.short.pop()} durante 10 minutos`);
+            exerciseReturn.push(`${exercises.short.pop()} for 10 minutes`);
             asMinutes-=10;
         }
         exerciseReturn = exerciseReturn.map((exercise,index) => (index > 0 && index < exerciseReturn.length-1) ? (index < exerciseReturn.length-2) ? `${exercise}, ` : `${exercise} e `: exercise);
         exerciseReturn = exerciseReturn.join('');
-        if(asMinutes > 0) exerciseReturn += ` e ainda vai sobrar ${minutesTohhMM(asMinutes)}.`;
+        if(asMinutes > 0) exerciseReturn += ` and you still have ${minutesTohhMM(asMinutes)}.`;
         this.setState({result:exerciseReturn});
     }
 
@@ -92,7 +92,7 @@ export default class ExercisesTime extends Component {
             this
                 .freeTimeValidationField
                 .start();
-            this.setState({freeTimeValidationMessage: ['Pra exercitar vai precisar de pelo menos uns 10 minutinhos!']});
+            this.setState({freeTimeValidationMessage: ['You need at least 10 minutes to exercise!']});
         } else {
             this.freeTimeInput.readOnly = true;
             this.freeTimeValidationField.className = "invisible";
@@ -122,7 +122,7 @@ export default class ExercisesTime extends Component {
                     .start()
             }}
                         typeSpeed={30}
-                        strings={['Quero me exercitar no tempo livre']}/></h1>
+                        strings={['I want to exercise in my spare time!']}/></h1>
                     <h3><Typed
                         stopped={true}
                         onComplete={() => {
@@ -135,7 +135,7 @@ export default class ExercisesTime extends Component {
                 this.description = description
             }}
                         typeSpeed={30}
-                        strings={['Exercicios sao muito importantes para manter uma boa qualidade de vida: ajudam a evitar enfermidades, perder peso, entre outros beneficios.']}/></h3>
+                        strings={['Exercises are really important for a good quality of life, avoiding diseases, losing weight and much more.']}/></h3>
                     <h3><Typed
                         stopped={true}
                         onComplete={() => {this.showFreeTimeInput()}}
@@ -144,7 +144,7 @@ export default class ExercisesTime extends Component {
                 this.inputFreeTimeType = inputFreeTimeType
             }}
                         typeSpeed={30}
-                        strings={['Digite quanto tempo livre por dia quer dedicar a se exercitar (<b>&lt;ENTER&gt;</b> ou <b>&lt;TOQUE_DUPLO&gt;</b> no texto roxo para confirmar): ']}/>
+                        strings={['Type how much time you want to exercise on your spare time daily(<b>&lt;ENTER&gt;</b> or <b>&lt;DOUBLE_TAP&gt;</b> on the purple text to confirm): ']}/>
                         <TimeField
                             onKeyDown={this.handleKeyPress}
                             tabIndex="0"
@@ -191,7 +191,7 @@ export default class ExercisesTime extends Component {
                                 .finalText
                                 .start()
                         }}
-                            strings={['Isso tudo? Dormir faz bem, sabia?']}
+                            strings={['Wow! That much? Maybe you could sleep a little bit...']}
                             stopped={true}/>
                     </p>
                     <p>
@@ -207,7 +207,7 @@ export default class ExercisesTime extends Component {
                                 .dots
                                 .start()
                         }}
-                            strings={['Calculando os resultados']}
+                            strings={['Calculating results']}
                             stopped={true}/>
                         <Typed
                             typeSpeed={500}
@@ -228,7 +228,7 @@ export default class ExercisesTime extends Component {
                             this.ready = ready
                         }}
                             showCursor={false}
-                            strings={['PRONTO!']}
+                            strings={['READY!']}
                             stopped={true}
                             onComplete={() => {
                             this.getResult()
