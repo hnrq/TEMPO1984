@@ -20,7 +20,7 @@ A demonstração e detalhamento do projeto pode ser vista através do vídeo, di
 Para executar este programa, é necessário ter [npm](https://www.npmjs.com) ou [Yarn](https://yarnpkg.com/) instalado em sua máquina, em seguida, execute o comando ```start```, dependendo do gerenciador de pacotes instalado. Exemplo:
 ```yarn start```
 ### Live Demo
-Caso não queira baixar o código para executá-lo, você pode ver uma demonstração [aqui](https://alberoneramos.github.io/TEMPO1984/)
+Caso não queira baixar o código para executá-lo, você pode ver uma demonstração [aqui](https://hnrq.github.io/TEMPO1984/)
 
 ## Casos de uso 
 ### UC1 
